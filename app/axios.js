@@ -1,9 +1,10 @@
 import axios from "axios";
 
 const instance =
-    axios.create({ baseURL: 'http://192.168.1.114:4000/api/change' })
+    axios.create({ baseURL: 'http://192.168.1.24:4000/api/change' })
 
 const changeState = async (state) => {
+    console.log('send',state)
     try {
         const { data: { msg } }
             = await instance.get('/change', { params: { state } })

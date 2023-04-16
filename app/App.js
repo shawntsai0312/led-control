@@ -12,8 +12,14 @@ export default function App() {
 
   const handleLedOn = async (e) => {
     const response = await changeState(e);
-    if(response==='receive') setOn(e)
-    
+    if (response === 'on') {
+      console.log('on')
+      setOn(true)
+    }
+    else if (response === 'off') {
+      console.log('off')
+      setOn(false)
+    }
   }
 
   useEffect(() => {
