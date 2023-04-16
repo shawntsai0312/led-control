@@ -17,7 +17,7 @@
  - only ./backend directory is needed
  - connect led to GPIO 4
 
-    cd backend
-    yarn
-    yarn server
+        cd backend
+        yarn
+        yarn server
 
